@@ -9,10 +9,14 @@ from gsheetsdb import connect
 
 st.set_page_config(layout="wide")
 
-#----------------------Hide Streamlit footer----------------------------
-hide_st_style = "#MainMenu {visibility: hidden;}footer {visibility: hidden;}header {visibility:hidden;"
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
 st.markdown(hide_st_style, unsafe_allow_html=True)
-#--------------------------------------------------------------------
 
 def RemoveDuplicate(listToRemoveDuplicates):
     return list(set(listToRemoveDuplicates))
