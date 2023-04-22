@@ -9,9 +9,10 @@ from gsheetsdb import connect
 
 st.set_page_config(layout="wide")
 
-footer="<div class='footer'><p>the word you want to tell<a style='display:block;text-align:center;' href='https://tools.crazyfan11.in' target='_blank'>@crazyfan11tools</a></p></div>"
-
-st.markdown(footer, unsafe_allow_html=True)
+#----------------------Hide Streamlit footer----------------------------
+hide_st_style = "#MainMenu {visibility: hidden;}footer {visibility: hidden;}header {visibility:hidden;"
+st.markdown(hide_st_style, unsafe_allow_html=True)
+#--------------------------------------------------------------------
 
 def RemoveDuplicate(listToRemoveDuplicates):
     return list(set(listToRemoveDuplicates))
