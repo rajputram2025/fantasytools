@@ -1,0 +1,31 @@
+Cricket API : Streamlit
+
+About
+
+Stats that matter
+
+-> Toss decisions in venue + percentage of teams winning when they win toss
+-> Trends of ongoing IPL season
+-> How much your team wins the toss + percentage of your team winning when they win toss
+-> Find the strength of your opposition
+
+-> Batter - bowler stats in venues (together stats + split by 1st/ 2nd innings)
+
+-> Batter - bowler stats vs opposition (together stats + split by 1st/ 2nd innings)
+
+-> Batter vs bowler (together stats + split by 1st/ 2nd innings + different phases)
+
+Fantasy articles
+
+-> Batter + bowler + team form
+-> Other matchups that might help ( express pace vs kkr / dhawan vs hazelwood )
+
+Reach out to us
+
+Reference:
+https://hganjoo-iplstats-battingcomp-76xqx6.streamlitapp.com/
+
+Future enhancements
+
+-> Batter records vs bowling type(LAP/RAP/SLA etc) in different phases
+-> Bowler vs RHB/LHB in different phases
