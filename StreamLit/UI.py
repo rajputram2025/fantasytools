@@ -9,7 +9,7 @@ from gsheetsdb import connect
 
 st.set_page_config(layout="wide")
 
-footer="<style> your css code put here</style><div class='footer'><p>the word you want to tell<a style='display:block;text-align:center;' href='https://www.streamlit.io' target='_blank'>your email address put here</a></p></div>"
+footer="<div class='footer'><p>the word you want to tell<a style='display:block;text-align:center;' href='https://tools.crazyfan11.in' target='_blank'>@crazyfan11tools</a></p></div>"
 
 st.markdown(footer, unsafe_allow_html=True)
 
