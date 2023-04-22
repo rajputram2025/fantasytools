@@ -7,8 +7,6 @@ import numpy as np
 import os
 from gsheetsdb import connect
 
-st.set_page_config(layout="wide")
-
 def RemoveDuplicate(listToRemoveDuplicates):
     return list(set(listToRemoveDuplicates))
 
