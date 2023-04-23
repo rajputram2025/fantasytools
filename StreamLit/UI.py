@@ -18,15 +18,6 @@ hide_st_style = """
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
-
-st.markdown("""<nav class="navbar navbar-light bg-light">
-  <span class="navbar-brand mb-0 h1">
-    <img src="https://crazyfan11.in/wp-content/uploads/2023/02/cropped-cropped-png-01.png" alt="Logo" style="width:100px;">
-  </span>
-</nav>
-""", unsafe_allow_html=True)
-
 def RemoveDuplicate(listToRemoveDuplicates):
     return list(set(listToRemoveDuplicates))
 
