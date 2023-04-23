@@ -5,6 +5,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np 
 import os
+import webbrowser
 from gsheetsdb import connect
 st.set_page_config(layout="wide")
 
@@ -885,4 +886,4 @@ with bowlerMatchups:
     BowlerMatchups(matchDataFrame, deliveriesDataFrame)
 
 with blogs:
-     redirect("https://crazyfan11.in/")
+     webbrowser.open("https://crazyfan11.in/")
