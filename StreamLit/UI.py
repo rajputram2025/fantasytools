@@ -27,6 +27,10 @@ st.markdown("""<nav class="navbar navbar-light bg-light">
 </nav>
 """, unsafe_allow_html=True)
 
+def redirect(_url):
+    link = ""
+    st.markdown(link, unsafe_allow_html=True)
+
 def RemoveDuplicate(listToRemoveDuplicates):
     return list(set(listToRemoveDuplicates))
 
@@ -857,7 +861,7 @@ def GetDeliveriesData():
 matchDataFrame = GetMatchData()
 deliveriesDataFrame = GetDeliveriesData()
 
-tossTab, batterVsGround, bowlerVsGround, batterVsOpposition, bowlerVsOpposition, batterMatchups, bowlerMatchups = st.tabs(['Toss', 'Batter vs Ground', 'Bowler vs Ground', 'Batter vs Opposition', 'Bowler vs Opposition', 'Batter Matchups', 'Bowler Matchups'])
+tossTab, batterVsGround, bowlerVsGround, batterVsOpposition, bowlerVsOpposition, batterMatchups, bowlerMatchups , blogs = st.tabs(['Toss', 'Batter vs Ground', 'Bowler vs Ground', 'Batter vs Opposition', 'Bowler vs Opposition', 'Batter Matchups', 'Bowler Matchups','Blogs'])
 
 with tossTab:
     TossTab(matchDataFrame)
@@ -879,3 +883,6 @@ with batterMatchups:
 
 with bowlerMatchups:
     BowlerMatchups(matchDataFrame, deliveriesDataFrame)
+
+with blogs:
+     redirect("https://crazyfan11.in/")
