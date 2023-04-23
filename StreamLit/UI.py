@@ -22,7 +22,7 @@ st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootst
 
 st.markdown("""<nav class="navbar navbar-light bg-light">
   <span class="navbar-brand mb-0 h1">
-    <img src="https://crazyfan11.in/wp-content/uploads/2023/02/cropped-cropped-png-01.png" alt="Logo" style="width:40px;">
+    <img src="https://crazyfan11.in/wp-content/uploads/2023/02/cropped-cropped-png-01.png" alt="Logo" style="width:100px;">
   </span>
 </nav>
 """, unsafe_allow_html=True)
