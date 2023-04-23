@@ -5,7 +5,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np 
 import os
-import webbrowser
 from gsheetsdb import connect
 st.set_page_config(layout="wide")
 
@@ -27,10 +26,6 @@ st.markdown("""<nav class="navbar navbar-light bg-light">
   </span>
 </nav>
 """, unsafe_allow_html=True)
-
-def redirect(_url):
-    link = ""
-    st.markdown(link, unsafe_allow_html=True)
 
 def RemoveDuplicate(listToRemoveDuplicates):
     return list(set(listToRemoveDuplicates))
@@ -862,7 +857,7 @@ def GetDeliveriesData():
 matchDataFrame = GetMatchData()
 deliveriesDataFrame = GetDeliveriesData()
 
-tossTab, batterVsGround, bowlerVsGround, batterVsOpposition, bowlerVsOpposition, batterMatchups, bowlerMatchups , blogs = st.tabs(['Toss', 'Batter vs Ground', 'Bowler vs Ground', 'Batter vs Opposition', 'Bowler vs Opposition', 'Batter Matchups', 'Bowler Matchups','Blogs'])
+tossTab, batterVsGround, bowlerVsGround, batterVsOpposition, bowlerVsOpposition, batterMatchups, bowlerMatchups = st.tabs(['Toss', 'Batter vs Ground', 'Bowler vs Ground', 'Batter vs Opposition', 'Bowler vs Opposition', 'Batter Matchups', 'Bowler Matchups'])
 
 with tossTab:
     TossTab(matchDataFrame)
@@ -884,6 +879,3 @@ with batterMatchups:
 
 with bowlerMatchups:
     BowlerMatchups(matchDataFrame, deliveriesDataFrame)
-
-with blogs:
-     webbrowser.open("https://crazyfan11.in/")
